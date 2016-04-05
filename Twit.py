@@ -23,6 +23,6 @@ while True:
     for line in f:
         curtime= time.strftime("%H:%M:%S")
         curdate= time.strftime("%x")
-        api.update_status(status="{0}---{1}, {2}".format(curdate,curtime,line)) 
+        api.update_status("{0}---{1}, {2}".format(curdate,curtime,line)) 
         TimeToSleep = randint(780,1200)
         time.sleep(TimeToSleep)#Tweet every 15 minutes
